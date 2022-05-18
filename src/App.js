@@ -1,13 +1,16 @@
 import './App.css';
-import Header from './Header';
-
+import Avenger from './Avenger';
+import Banner from './Banner';
 function App() {
   return (
     <div className="App">
-     <h1>Hello Everyone</h1>
-     <Header/>
-     <Header/>
-     <Header/>
+     <h1 className='title' >Avenger List</h1>
+     <div className='container'>
+     <Avenger name="Ironman" age="35"/>
+     <Avenger name="Thor" age="98"/>
+     <Avenger name="Captain America" age="105"/>
+     </div>
+     <Banner/>
     </div>
   );
 }
